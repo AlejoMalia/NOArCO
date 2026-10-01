@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "axis_confidence": {
+      "additionalProperties": {
+        "enum": [
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "propertyNames": {
+        "enum": [
+          "mass",
+          "power",
+          "forcing",
+          "throughput",
+          "stability"
+        ]
+      },
+      "type": "object"
+    },
+    "body": {
+      "type": "string"
+    },
+    "body_assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "code_hash": {
+      "type": "string"
+    },
+    "constants_hash": {
+      "type": "string"
+    },
+    "constants_used": {
+      "items": {
+        "required": [
+          "name",
+          "value",
+          "unit",
+          "source",
+          "class"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "input_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "inputs": {
+      "required": [
+        "planet",
+        "target",
+        "availability"
+      ],
+      "type": "object"
+    },
+    "min_build_time_years": {
+      "description": "\"inf\" = mass-limited",
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "model_class": {
+      "type": "string"
+    },
+    "radiative_mode": {
+      "enum": [
+        "simple",
+        "literature_calibrated"
+      ]
+    },
+    "required": {
+      "type": "object"
+    },
+    "requirements": {
+      "type": "object"
+    },
+    "schema": {
+      "const": "noarco-result/1.1"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "shortfall": {
+      "type": "object"
+    },
+    "target": {
+      "type": "string"
+    },
+    "verdict": {
+      "properties": {
+        "limiting_axis": {
+          "enum": [
+            "mass",
+            "power",
+            "forcing",
+            "throughput",
+            "stability",
+            null
+          ],
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pi": {
+          "additionalProperties": {
+            "description": "\"inf\" = nothing required",
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "propertyNames": {
+            "enum": [
+              "mass",
+              "power",
+              "forcing",
+              "throughput",
+              "stability"
+            ]
+          },
+          "type": "object"
+        },
+        "pi_min": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "viable": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "viable",
+        "limiting_axis",
+        "pi_min",
+        "pi"
+      ],
+      "type": "object"
+    },
+    "version": {
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema",
+    "version",
+    "model_class",
+    "body",
+    "target",
+    "verdict",
+    "requirements",
+    "inputs",
+    "input_hash",
+    "constants_hash",
+    "code_hash",
+    "radiative_mode",
+    "axis_confidence",
+    "warnings"
+  ],
+  "title": "noarco-result/1.1",
+  "type": "object"
+}

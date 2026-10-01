@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use NOArCO, please cite it as below and quote the input_hash / code_hash of the result record you used."
+title: "NOArCO"
+type: software
+version: "0.1.0"
+license: CC-BY-4.0
+abstract: >-
+  Open-source Python framework for pre-simulation feasibility screening of planetary-engineering,
+  paraterraforming and habitat/ISRU trades: a conjunctive viability verdict with the limiting axis,
+  citeable JSON records (schema noarco-result/1.1) and constants with declared provenance.
+authors:
+  - family-names: Malia
+    given-names: Alejo
+  - name: "NOArCO Contributors"
+keywords:
+  - terraforming
+  - planetary engineering
+  - feasibility screening
+  - ISRU
+references:
+  - type: article
+    title: "Terraforming Mars: Mass, Forcing, and Industrial Throughput Constraints"
+    authors:
+      - family-names: Turyshev
+        given-names: S. G.
+    year: 2026
+    notes: "arXiv:2603.00402 (reference framework for the conjunctive rubric and anchors)"

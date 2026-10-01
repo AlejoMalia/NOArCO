@@ -1,0 +1,24 @@
+{
+  "name": "Mars",
+  "epoch": "present mean (orbit-averaged)",
+  "notes": "Values copied from the framework's own Mars dataset (Mahaffy 2013; Millour 2022 MCD; NASA fact sheet); ir_optical_depth is an estimate.",
+  "fields": {
+    "pressure_pa": {"value": 610.0, "unit": "Pa", "data_source": "measured", "reference": "Viking/Curiosity REMS; MCD v6.1"},
+    "temperature_k": {"value": 210.0, "unit": "K", "data_source": "literature", "reference": "MCD v6.1 global mean"},
+    "gravity_ms2": {"value": 3.7207, "unit": "m/s^2", "data_source": "literature", "reference": "GM/R^2"},
+    "mass_kg": {"value": 6.4171e23, "unit": "kg", "data_source": "literature", "reference": "NASA planetary fact sheet"},
+    "radius_m": {"value": 3.3895, "unit": "Mm", "data_source": "literature", "reference": "IAU 2015"},
+    "albedo": {"value": 0.25, "unit": "1", "data_source": "literature", "reference": "Bond albedo"},
+    "solar_constant_wm2": {"value": 586.2, "unit": "W/m^2", "data_source": "literature", "reference": "1361 W/m2 / 1.524^2"},
+    "ir_optical_depth": {"value": 0.05, "unit": "1", "data_source": "assumed", "reference": "dusty/clear estimate"},
+    "co2_ice_kg": {"value": 2.3e16, "unit": "kg", "data_source": "literature", "reference": "Turyshev 2026 Sec. V.B"}
+  },
+  "composition": {
+    "species": {"CO2": 0.9532, "N2": 0.0268, "Ar": 0.0193, "O2": 0.00174, "CO": 0.000747, "H2O": 0.0003},
+    "data_source": "measured", "reference": "Mahaffy et al. 2013 (SAM/Curiosity)"
+  },
+  "profile": {
+    "pressure": [0.05, 1.0, 50.0, 610.0], "pressure_unit": "Pa", "temperature": [150.0, 165.0, 190.0, 210.0],
+    "data_source": "literature", "reference": "illustrative column, not a measured sounding"
+  }
+}
