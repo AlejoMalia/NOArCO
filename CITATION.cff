@@ -4,6 +4,9 @@ title: "NOArCO"
 type: software
 version: "0.1.0"
 license: CC-BY-4.0
+doi: 10.5281/zenodo.23083986
+repository-code: "https://github.com/AlejoMalia/NOArCO"
+url: "https://doi.org/10.5281/zenodo.23083986"
 abstract: >-
   Open-source Python framework for pre-simulation feasibility screening of planetary-engineering,
   paraterraforming and habitat/ISRU trades: a conjunctive viability verdict with the limiting axis,

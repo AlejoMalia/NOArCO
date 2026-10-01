@@ -4,6 +4,7 @@
   <img src="docs/banner.png" alt="NOArCO banner" width="100%">
 </p>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23083986.svg)](https://doi.org/10.5281/zenodo.23083986)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](CHANGELOG.md)
 [![Tests](https://img.shields.io/badge/tests-1799%20passed%20%7C%201%20skipped-brightgreen.svg)](tests/)
@@ -400,6 +401,25 @@ What the suite covers (test modules, incl. `test_reference_turyshev2026.py`, whi
 The suite includes regression tests for every defect fixed so far (see [CHANGELOG](CHANGELOG.md)).
 
 ---
+
+## Citation
+
+If you use NOArCO, cite the archived release:
+
+> Malia, A. (2026). *NOArCO: feasibility screening framework for planetary engineering* (v0.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23083986
+
+```bibtex
+@software{malia_noarco_2026,
+  author  = {Malia, Alejo},
+  title   = {NOArCO: feasibility screening framework for planetary engineering},
+  year    = {2026},
+  version = {0.1.0},
+  doi     = {10.5281/zenodo.23083986},
+  url     = {https://doi.org/10.5281/zenodo.23083986}
+}
+```
+
+For a specific result, also quote its `input_hash` and `code_hash` (see `Verdict.bibtex()`). Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
 
 ## Scientific References
 
